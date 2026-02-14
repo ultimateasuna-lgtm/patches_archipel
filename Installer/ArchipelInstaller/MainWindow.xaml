@@ -3,10 +3,64 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ArchipelInstaller"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Archipel Patches Installer"
+        Height="520"
+        Width="780"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
+        <TextBlock Grid.Row="0"
+                   Text="Archipel Patches Installer"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Margin="0,0,0,10" />
+
+        <TextBox Grid.Row="1"
+                 Name="LogsTextBox"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 FontFamily="Consolas"
+                 Margin="0,0,0,10" />
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,0,0,10">
+            <ProgressBar Name="InstallProgressBar" Height="20" Minimum="0" Maximum="100" Value="0" />
+            <TextBlock Name="ProgressTextBlock" Margin="0,6,0,0" Text="0%" HorizontalAlignment="Right" />
+        </StackPanel>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <CheckBox Grid.Column="0" Name="SilentModeCheckBox" Content="Mode silencieux" VerticalAlignment="Center" />
+
+            <Button Grid.Column="1"
+                    Name="InstallButton"
+                    Content="Installer / Mettre à jour"
+                    Width="190"
+                    Height="34"
+                    Margin="0,0,10,0"
+                    Click="InstallButton_Click" />
+
+            <Button Grid.Column="2"
+                    Name="CloseButton"
+                    Content="Fermer"
+                    Width="100"
+                    Height="34"
+                    Click="CloseButton_Click" />
+        </Grid>
     </Grid>
 </Window>

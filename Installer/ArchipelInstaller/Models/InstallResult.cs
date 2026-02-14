@@ -2,7 +2,7 @@ namespace ArchipelInstaller.Models;
 
 public sealed class InstallResult
 {
-    public required InstallerExitCode ExitCode { get; init; }
-    public required string Message { get; init; }
+    public InstallerExitCode ExitCode { get; init; }
+    public string Message { get; init; } = string.Empty;
     public bool AlreadyUpToDate { get; init; }
 }

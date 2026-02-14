@@ -2,7 +2,8 @@ namespace ArchipelInstaller.Models;
 
 public sealed class ManifestEntry
 {
-    public required string RelativePath { get; init; }
-    public required string Sha256 { get; init; }
-    public required long Size { get; init; }
+    public string RelativePath { get; init; } = string.Empty;
+    public string Sha256 { get; init; } = string.Empty;
+    public string GitBlobSha1 { get; init; } = string.Empty;
+    public long Size { get; init; }
 }

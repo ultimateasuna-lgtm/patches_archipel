@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hw+UBZk1MXboODPIG3jtGSnrfAVCVJHqDB7XrBaL/WdpwqwG9rDECKO7QY7/D9aScAqdx/PYop+HFYXpvI99mg==",
+  "dgSpecHash": "LN+PcbsIOhXdpPd6nSBrZnkMR6FhWtQqdaZO6soQKgMf6qcZdIE7n1NkTtcdn7pNx5h+Pt/kmZqGWP5d8+yfBw==",
   "success": true,
   "projectFilePath": "F:\\patches_archipel\\Installer\\ArchipelInstaller\\ArchipelInstaller.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\loicf\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.36\\microsoft.netcore.app.runtime.win-x64.6.0.36.nupkg.sha512",
+    "C:\\Users\\loicf\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.36\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.36.nupkg.sha512",
+    "C:\\Users\\loicf\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.36\\microsoft.aspnetcore.app.runtime.win-x64.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }
